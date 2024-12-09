@@ -30,7 +30,7 @@ jobs:
     steps:
     - name: Download Artifact
       if: ${{ contains(github.event.head_commit.message, 'deploy') }}
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: my-artifact-ubuntu-latest
 
